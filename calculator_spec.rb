@@ -8,8 +8,8 @@
 
 require './calculator'
  
-describe 'Calculator' do
-   def calculate(&block)
+describe Calculator do
+  def calculate(&block)
     subject.calculate(&block)
   end
 
@@ -71,7 +71,7 @@ describe 'Calculator' do
           subtract -3
           subtract 2
         end
-      ).to eq(6)
+      ).to eq(-4)
     end
   end
 
